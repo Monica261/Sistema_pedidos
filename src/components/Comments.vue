@@ -1,10 +1,10 @@
 <template>
   <div class="container">
-    <h1>Comentários</h1>
+    <h1>Pedidos</h1>
     <hr />
     <FormTodo v-on:add-todo="addComment"></FormTodo>
     <div class="list-group">
-    <p v-if="comments.length <= 0">Sem comentários...</p>
+    <p v-if="comments.length <= 0">Sem Pedidos...</p>
     <div v-else class="list-group-item" v-for="(comment, index) in allComments" v-bind:key="index">
         <span class="comment__author"><strong>Autor: </strong>{{ comment.name }}</span>
         <p><strong>Hamburguer: </strong>{{ comment.hamburguer }}</p>
