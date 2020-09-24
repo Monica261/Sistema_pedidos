@@ -6,7 +6,7 @@
     <div class="list-group">
     <p v-if="comments.length <= 0">Sem Pedidos...</p>
     <div v-else class="list-group-item" v-for="(comment, index) in allComments" v-bind:key="index">
-        <span class="comment__author"><strong>Autor: </strong>{{ comment.name }}</span>
+        <span class="comment__author"><strong>Cliente: </strong>{{ comment.name }}</span>
         <p><strong>Hamburguer: </strong>{{ comment.hamburguer }}</p>
         <p><strong>Bebida: </strong>{{ comment.bebida }}</p>
         <p><strong>Comentário: </strong>{{ comment.message }}</p>
